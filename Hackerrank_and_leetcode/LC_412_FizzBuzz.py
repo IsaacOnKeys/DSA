@@ -43,40 +43,18 @@ def fizzBuzz(n: int):
 """
 
 # With List Comprehension and Ternary operator:
-"""
+
+
 def fizzBuzz(n: int):
     answer = [
         (
             "FizzBuzz"
             if (i % 3 == 0 and i % 5 == 0)
             else "Fizz" if (i % 3 == 0) else "Buzz" if (i % 5 == 0) else f"{i}"
-        )git 
+        )
         for i in range(1, n + 1)
     ]
     return answer
-"""
 
 
-def fizzBuzz(n: int):
-    base = [
-        "1",
-        "2",
-        "Fizz",
-        "4",
-        "Buzz",
-        "Fizz",
-        "7",
-        "8",
-        "Fizz",
-        "Buzz",
-        "11",
-        "Fizz",
-        "13",
-        "14",
-        "FizzBuzz",
-    ]
-    q, r = divmod(n, 15)
-    return base * q + base[:r]
-
-
-print(fizzBuzz(3))
+print(fizzBuzz(100))
